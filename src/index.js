@@ -1,1 +1,3 @@
-console.log("orking");
+import "./main.css";
+
+console.log("working");
