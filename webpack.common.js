@@ -11,6 +11,10 @@ module.exports = {
           "css-loader", //1.sturns css into common js
         ],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };
