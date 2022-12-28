@@ -10,8 +10,8 @@ header {
   margin: 10px;
 }
 
-.hero {
-  height: min(300px, 20vw);
+.hero-wrapper {
+  height: min(300px, 40vw);
   width: 100vw;
   background: no-repeat url("./espresso-hero.webp");
   background-position: center;
@@ -19,6 +19,23 @@ header {
   display: flex;
 }
 
+.hero {
+  background: linear-gradient(
+    110deg,
+    rgba(0, 0, 0, 0.686),
+    rgba(0, 0, 0, 0.131)
+  );
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+hr {
+  width: 100%;
+  margin: 30px 0px;
+}
 .paragraph {
   margin: 10px;
 }
