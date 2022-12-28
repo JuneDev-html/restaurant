@@ -28,8 +28,25 @@ header {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.title-wrap {
+  flex: 1;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-top: 1px solid rgba(245, 245, 245, 0.808);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.785);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.hero p {
+  color: white;
+  font-size: 40px;
+  margin-left: 10%;
 }
 
 hr {
