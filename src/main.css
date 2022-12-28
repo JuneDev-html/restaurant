@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   background-color: #fff;
   margin: 0;
@@ -10,6 +14,7 @@ header {
   margin: 10px;
 }
 
+/* ------ 2. Banner -------- */
 .hero-wrapper {
   height: min(300px, 40vw);
   width: 100vw;
@@ -44,15 +49,64 @@ header {
 }
 
 .hero p {
+  /* font-family: "Luxurious Script", cursive; */
   color: white;
+  font-weight: 600;
   font-size: 40px;
   margin-left: 10%;
+  letter-spacing: 2px;
 }
 
-hr {
-  width: 100%;
-  margin: 30px 0px;
+/* -------- 3. Main Body --------- */
+.main-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  transition: 0.5s;
 }
-.paragraph {
-  margin: 10px;
+
+.albanian-welcome {
+  font-family: "Luxurious Script", cursive;
+  font-size: 70px;
+  color: rgb(220, 165, 47);
+  margin-bottom: -15px;
+  transition: 1s;
+}
+
+.english-welcome {
+  margin-top: -20px;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: -4px;
+}
+
+.short-border {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 200px;
+  height: 5px;
+  background-color: rgb(237, 177, 49);
+  border: none;
+}
+
+.blurb {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.menu-btn {
+  margin-top: 50px;
+  border: 2px solid black;
+  font-size: 22px;
+  padding: 12px 30px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  scale: 0.9;
 }
