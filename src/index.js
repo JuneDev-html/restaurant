@@ -1,4 +1,6 @@
-import "./home.js";
 import "./main.css";
+// import { loadHome } from "./app/page-loaders";
 
-console.log("working");
+// export const content = document.getElementById("content");
+
+// loadHome();
