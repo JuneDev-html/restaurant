@@ -5,7 +5,8 @@
 * 4. ABOUT
  */
 
-/* ----- 1. GENERAL -------- */
+/* ------------ ----- 1. GENERAL ----- -------- */
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -16,11 +17,11 @@ body {
 }
 
 header {
+  flex: 0;
   font-size: 20px;
   display: flex;
   justify-content: space-evenly;
   margin: 10px;
-  padding: 10px;
   letter-spacing: 3px;
 }
 
@@ -32,8 +33,35 @@ header div:hover {
   height: 21px;
 }
 
+footer {
+  height: 40px;
+}
+
+footer {
+  margin: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logos {
+  margin-left: 8px;
+}
+
+.logos img {
+  width: 18;
+}
+
+.logos:hover {
+  scale: 1.3;
+  transition: 0.3s;
+}
+
 /* --------- ---- 2. HOME ---- ----------- */
-/* Banner */
+/* ------ 2. Banner ------ */
 .hero-wrapper {
   height: min(300px, 40vw);
   width: 100vw;
@@ -74,7 +102,7 @@ header div:hover {
   letter-spacing: 2px;
 }
 
-/*  Main Body */
+/* ------ 2. Main Body ----- */
 .home-body {
   display: flex;
   flex-direction: column;
@@ -130,10 +158,10 @@ header div:hover {
 
 /* ----------- ---- 3. MENU PAGE ---- ---------- */
 
-/* ------- Menu top --------- */
+/* -------3. Menu top ------- */
 .menu-main {
   display: flex;
-  height: 94vh;
+  height: 90vh;
 }
 
 .menu-side {
@@ -167,7 +195,7 @@ header div:hover {
   font-weight: 400;
 }
 
-/* ------- Menu items ------- */
+/* -----3. Menu items ----- */
 
 .item-type {
   margin-top: 90px;
@@ -222,6 +250,8 @@ header div:hover {
   margin-top: 30px;
 }
 
+/* -----3. Banner side ----- */
+
 .banner-side {
   flex: 1;
   height: 95%;
@@ -229,4 +259,10 @@ header div:hover {
   background-size: 870px 1200px;
   background-position: center;
   border-radius: 3px;
+}
+
+.banner-side div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.126);
 }
