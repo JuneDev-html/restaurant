@@ -60,6 +60,16 @@ footer {
   align-items: center;
 }
 
+.git-img {
+  content: url("./images/logo.png");
+  width: 18px;
+}
+
+.yt-img {
+  content: url("./images/youtube.svg");
+  width: 20px;
+}
+
 .logos {
   margin-left: 8px;
 }
