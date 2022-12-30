@@ -18,14 +18,13 @@ body {
 }
 
 #content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-rows: 1fr 18fr 50px;
   height: 100%;
 }
 
 header {
-  flex: 0;
+  grid-row: 1/2;
   height: 30px;
   font-size: 20px;
   display: flex;
@@ -43,15 +42,16 @@ header div:hover {
 }
 
 main {
-  flex: 1;
+  grid-row: 2/3;
 }
 
 footer {
-  height: 20px;
+  grid-row: 3/4;
+  /* height: 20px; */
 }
 
 footer {
-  margin: 1rem;
+  margin: 10px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
