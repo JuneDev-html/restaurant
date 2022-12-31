@@ -7,12 +7,10 @@ import { buildMenu } from "./menu";
 
 export function loadHome() {
   content.append(buildNav(), buildHome(), buildFooter());
-
   listenNav();
 }
 
 export function loadMenu() {
   content.append(buildNav(), buildMenu(), buildFooter());
-
   listenNav();
 }
