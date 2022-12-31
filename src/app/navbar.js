@@ -1,14 +1,12 @@
 import { buildElement } from "./build-module";
 
 export const buildNav = () => {
-  const header = buildElement("header", null, null);
-  const home = buildElement("div", "home", "HOME");
-  const menu = buildElement("div", "menu", "MENU");
-  const about = buildElement("div", "about", "ABOUT");
+  const header = buildElement("header", null, null, null);
+  const home = buildElement("div", null, "home", "HOME");
+  const menu = buildElement("div", null, "menu", "MENU");
+  const about = buildElement("div", null, "about", "ABOUT");
 
-  header.append(home);
-  header.append(menu);
-  header.append(about);
+  header.append(home, menu, about);
 
   return header;
 };

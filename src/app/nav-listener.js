@@ -1,4 +1,5 @@
-import { loadHome } from "./page-loaders";
+import { content } from "..";
+import { loadHome, loadMenu } from "./page-loaders";
 
 export const listenNav = () => {
   const header = document.querySelector("header");
@@ -10,6 +11,15 @@ export const listenNav = () => {
       content.innerHTML = "";
       console.log("home clicked");
       loadHome();
+      document.querySelector(".menu-btn").addEventListener("click", () => {
+        content.innerHTML = "";
+        console.log("menu button clicked");
+        loadMenu();
+      });
+    } else if (clicked === "MENU") {
+      content.innerHTML = "";
+      console.log("menu clicked");
+      loadMenu();
     }
   });
 };
