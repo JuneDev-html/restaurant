@@ -1,6 +1,6 @@
 import "./main.css";
-import { loadHome } from "./app/page-loaders";
+// import { loadHome } from "./app/page-loaders";
 
-export const content = document.getElementById("content");
+// export const content = document.getElementById("content");
 
-loadHome();
+// loadHome();

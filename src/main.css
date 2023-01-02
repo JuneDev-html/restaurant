@@ -285,3 +285,19 @@ footer {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.126);
 }
+
+/* ------------- ---- 4. ABOUT ---- ----------- */
+
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  flex: 1;
+  background: no-repeat url("./images/about-img.jpeg");
+  background-size: 100% 120%;
+  background-position: center;
+  height: 90%;
+}
