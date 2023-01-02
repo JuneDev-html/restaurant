@@ -299,7 +299,7 @@ footer {
   background: no-repeat url("./images/about-img.jpeg");
   background-size: 1600px 1000px;
   background-position: center;
-  height: 90%;
+  height: 100%;
   display: flex;
   justify-content: end;
 }

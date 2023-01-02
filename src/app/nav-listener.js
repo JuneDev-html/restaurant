@@ -1,5 +1,5 @@
 import { content } from "..";
-import { loadHome, loadMenu } from "./page-loaders";
+import { loadHome, loadMenu, loadAbout } from "./page-loaders";
 
 export const listenNav = () => {
   const header = document.querySelector("header");
@@ -20,6 +20,10 @@ export const listenNav = () => {
       content.innerHTML = "";
       console.log("menu clicked");
       loadMenu();
+    } else if (clicked === "ABOUT") {
+      content.innerHTML = "";
+      console.log("about clicked");
+      loadAbout();
     }
   });
 };
